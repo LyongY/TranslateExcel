@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19359439254D331800E26ADC /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19359438254D331800E26ADC /* DragView.swift */; };
+		1935943B254D34D000E26ADC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1935943A254D34D000E26ADC /* UserData.swift */; };
+		1935948E254D4C0100E26ADC /* libxlntd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1935943D254D4C0100E26ADC /* libxlntd.a */; };
+		1935948F254D4C0200E26ADC /* XLNT.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1935943E254D4C0100E26ADC /* XLNT.mm */; };
+		19359490254D4C0200E26ADC /* liblibstudxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1935948C254D4C0100E26ADC /* liblibstudxml.a */; };
+		19359492254D4DA400E26ADC /* Excel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19359491254D4DA400E26ADC /* Excel.swift */; };
+		19485BA42549931C005AF412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19485BA32549931C005AF412 /* AppDelegate.swift */; };
+		19485BA62549931C005AF412 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19485BA52549931C005AF412 /* ContentView.swift */; };
+		19485BA825499320005AF412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19485BA725499320005AF412 /* Assets.xcassets */; };
+		19485BAB25499320005AF412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19485BAA25499320005AF412 /* Preview Assets.xcassets */; };
+		19485BAE25499320005AF412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19485BAC25499320005AF412 /* Main.storyboard */; };
+		198F4382254BDA83007B8594 /* TranslateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F4381254BDA83007B8594 /* TranslateAPI.swift */; };
+		1992488A254FFBB20052234F /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19924889254FFBB20052234F /* ProgressBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19359438254D331800E26ADC /* DragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
+		1935943A254D34D000E26ADC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		1935943D254D4C0100E26ADC /* libxlntd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libxlntd.a; sourceTree = "<group>"; };
+		1935943E254D4C0100E26ADC /* XLNT.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XLNT.mm; sourceTree = "<group>"; };
+		19359441254D4C0100E26ADC /* manifest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = manifest.hpp; sourceTree = "<group>"; };
+		19359442254D4C0100E26ADC /* uri.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = uri.hpp; sourceTree = "<group>"; };
+		19359443254D4C0100E26ADC /* relationship.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = relationship.hpp; sourceTree = "<group>"; };
+		19359444254D4C0100E26ADC /* ext_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ext_list.hpp; sourceTree = "<group>"; };
+		19359446254D4C0100E26ADC /* spreadsheet_drawing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spreadsheet_drawing.hpp; sourceTree = "<group>"; };
+		19359448254D4C0100E26ADC /* range_iterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = range_iterator.hpp; sourceTree = "<group>"; };
+		19359449254D4C0100E26ADC /* print_options.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = print_options.hpp; sourceTree = "<group>"; };
+		1935944A254D4C0100E26ADC /* sheet_view.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sheet_view.hpp; sourceTree = "<group>"; };
+		1935944B254D4C0100E26ADC /* header_footer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = header_footer.hpp; sourceTree = "<group>"; };
+		1935944C254D4C0100E26ADC /* sheet_protection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sheet_protection.hpp; sourceTree = "<group>"; };
+		1935944D254D4C0100E26ADC /* selection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = selection.hpp; sourceTree = "<group>"; };
+		1935944E254D4C0100E26ADC /* phonetic_pr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = phonetic_pr.hpp; sourceTree = "<group>"; };
+		1935944F254D4C0100E26ADC /* major_order.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = major_order.hpp; sourceTree = "<group>"; };
+		19359450254D4C0100E26ADC /* pane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pane.hpp; sourceTree = "<group>"; };
+		19359451254D4C0100E26ADC /* cell_vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cell_vector.hpp; sourceTree = "<group>"; };
+		19359452254D4C0100E26ADC /* row_properties.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = row_properties.hpp; sourceTree = "<group>"; };
+		19359453254D4C0100E26ADC /* range_reference.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = range_reference.hpp; sourceTree = "<group>"; };
+		19359454254D4C0100E26ADC /* page_setup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = page_setup.hpp; sourceTree = "<group>"; };
+		19359455254D4C0100E26ADC /* column_properties.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = column_properties.hpp; sourceTree = "<group>"; };
+		19359456254D4C0100E26ADC /* sheet_format_properties.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sheet_format_properties.hpp; sourceTree = "<group>"; };
+		19359457254D4C0100E26ADC /* page_margins.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = page_margins.hpp; sourceTree = "<group>"; };
+		19359458254D4C0100E26ADC /* range.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = range.hpp; sourceTree = "<group>"; };
+		19359459254D4C0100E26ADC /* sheet_pr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sheet_pr.hpp; sourceTree = "<group>"; };
+		1935945A254D4C0100E26ADC /* cell_iterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cell_iterator.hpp; sourceTree = "<group>"; };
+		1935945B254D4C0100E26ADC /* worksheet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = worksheet.hpp; sourceTree = "<group>"; };
+		1935945D254D4C0100E26ADC /* timedelta.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timedelta.hpp; sourceTree = "<group>"; };
+		1935945E254D4C0100E26ADC /* datetime.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = datetime.hpp; sourceTree = "<group>"; };
+		1935945F254D4C0100E26ADC /* time.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = time.hpp; sourceTree = "<group>"; };
+		19359460254D4C0100E26ADC /* variant.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = variant.hpp; sourceTree = "<group>"; };
+		19359461254D4C0100E26ADC /* path.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = path.hpp; sourceTree = "<group>"; };
+		19359462254D4C0100E26ADC /* date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = date.hpp; sourceTree = "<group>"; };
+		19359463254D4C0100E26ADC /* optional.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = optional.hpp; sourceTree = "<group>"; };
+		19359464254D4C0100E26ADC /* numeric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = numeric.hpp; sourceTree = "<group>"; };
+		19359465254D4C0100E26ADC /* calendar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = calendar.hpp; sourceTree = "<group>"; };
+		19359466254D4C0100E26ADC /* exceptions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exceptions.hpp; sourceTree = "<group>"; };
+		19359467254D4C0100E26ADC /* scoped_enum_hash.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scoped_enum_hash.hpp; sourceTree = "<group>"; };
+		19359468254D4C0100E26ADC /* xlnt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xlnt.hpp; sourceTree = "<group>"; };
+		1935946A254D4C0100E26ADC /* rich_text_run.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rich_text_run.hpp; sourceTree = "<group>"; };
+		1935946B254D4C0100E26ADC /* cell_type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cell_type.hpp; sourceTree = "<group>"; };
+		1935946C254D4C0100E26ADC /* phonetic_run.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = phonetic_run.hpp; sourceTree = "<group>"; };
+		1935946D254D4C0100E26ADC /* hyperlink.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hyperlink.hpp; sourceTree = "<group>"; };
+		1935946E254D4C0100E26ADC /* cell.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cell.hpp; sourceTree = "<group>"; };
+		1935946F254D4C0100E26ADC /* cell_reference.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cell_reference.hpp; sourceTree = "<group>"; };
+		19359470254D4C0100E26ADC /* index_types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = index_types.hpp; sourceTree = "<group>"; };
+		19359471254D4C0100E26ADC /* comment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = comment.hpp; sourceTree = "<group>"; };
+		19359472254D4C0100E26ADC /* rich_text.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rich_text.hpp; sourceTree = "<group>"; };
+		19359474254D4C0100E26ADC /* alignment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = alignment.hpp; sourceTree = "<group>"; };
+		19359475254D4C0100E26ADC /* border.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = border.hpp; sourceTree = "<group>"; };
+		19359476254D4C0100E26ADC /* number_format.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = number_format.hpp; sourceTree = "<group>"; };
+		19359477254D4C0100E26ADC /* fill.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fill.hpp; sourceTree = "<group>"; };
+		19359478254D4C0100E26ADC /* font.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = font.hpp; sourceTree = "<group>"; };
+		19359479254D4C0100E26ADC /* protection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = protection.hpp; sourceTree = "<group>"; };
+		1935947A254D4C0100E26ADC /* color.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color.hpp; sourceTree = "<group>"; };
+		1935947B254D4C0100E26ADC /* format.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = format.hpp; sourceTree = "<group>"; };
+		1935947C254D4C0100E26ADC /* style.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = style.hpp; sourceTree = "<group>"; };
+		1935947D254D4C0100E26ADC /* conditional_format.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = conditional_format.hpp; sourceTree = "<group>"; };
+		1935947E254D4C0100E26ADC /* xlnt_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xlnt_config.hpp; sourceTree = "<group>"; };
+		19359480254D4C0100E26ADC /* workbook_view.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = workbook_view.hpp; sourceTree = "<group>"; };
+		19359481254D4C0100E26ADC /* workbook.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = workbook.hpp; sourceTree = "<group>"; };
+		19359482254D4C0100E26ADC /* external_book.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = external_book.hpp; sourceTree = "<group>"; };
+		19359483254D4C0100E26ADC /* theme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = theme.hpp; sourceTree = "<group>"; };
+		19359484254D4C0100E26ADC /* metadata_property.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = metadata_property.hpp; sourceTree = "<group>"; };
+		19359485254D4C0100E26ADC /* worksheet_iterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = worksheet_iterator.hpp; sourceTree = "<group>"; };
+		19359486254D4C0100E26ADC /* named_range.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = named_range.hpp; sourceTree = "<group>"; };
+		19359487254D4C0100E26ADC /* calculation_properties.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = calculation_properties.hpp; sourceTree = "<group>"; };
+		19359488254D4C0100E26ADC /* streaming_workbook_writer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = streaming_workbook_writer.hpp; sourceTree = "<group>"; };
+		19359489254D4C0100E26ADC /* streaming_workbook_reader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = streaming_workbook_reader.hpp; sourceTree = "<group>"; };
+		1935948A254D4C0100E26ADC /* document_security.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = document_security.hpp; sourceTree = "<group>"; };
+		1935948B254D4C0100E26ADC /* XLNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNT.h; sourceTree = "<group>"; };
+		1935948C254D4C0100E26ADC /* liblibstudxml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibstudxml.a; sourceTree = "<group>"; };
+		1935948D254D4C0100E26ADC /* Language Tool-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Language Tool-Bridging-Header.h"; sourceTree = "<group>"; };
+		19359491254D4DA400E26ADC /* Excel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excel.swift; sourceTree = "<group>"; };
+		19485BA02549931C005AF412 /* TranslateExcel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateExcel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19485BA32549931C005AF412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19485BA52549931C005AF412 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19485BA725499320005AF412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19485BAA25499320005AF412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19485BAD25499320005AF412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19485BAF25499320005AF412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19485BB025499320005AF412 /* TranslateExcel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranslateExcel.entitlements; sourceTree = "<group>"; };
+		198F4381254BDA83007B8594 /* TranslateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateAPI.swift; sourceTree = "<group>"; };
+		19924889254FFBB20052234F /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19485B9D2549931C005AF412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1935948E254D4C0100E26ADC /* libxlntd.a in Frameworks */,
+				19359490254D4C0200E26ADC /* liblibstudxml.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1935943C254D4C0100E26ADC /* XLNT */ = {
+			isa = PBXGroup;
+			children = (
+				1935943D254D4C0100E26ADC /* libxlntd.a */,
+				1935943E254D4C0100E26ADC /* XLNT.mm */,
+				1935943F254D4C0100E26ADC /* xlnt */,
+				1935948B254D4C0100E26ADC /* XLNT.h */,
+				1935948C254D4C0100E26ADC /* liblibstudxml.a */,
+				1935948D254D4C0100E26ADC /* Language Tool-Bridging-Header.h */,
+			);
+			path = XLNT;
+			sourceTree = "<group>";
+		};
+		1935943F254D4C0100E26ADC /* xlnt */ = {
+			isa = PBXGroup;
+			children = (
+				19359440254D4C0100E26ADC /* packaging */,
+				19359445254D4C0100E26ADC /* drawing */,
+				19359447254D4C0100E26ADC /* worksheet */,
+				1935945C254D4C0100E26ADC /* utils */,
+				19359468254D4C0100E26ADC /* xlnt.hpp */,
+				19359469254D4C0100E26ADC /* cell */,
+				19359473254D4C0100E26ADC /* styles */,
+				1935947E254D4C0100E26ADC /* xlnt_config.hpp */,
+				1935947F254D4C0100E26ADC /* workbook */,
+			);
+			path = xlnt;
+			sourceTree = "<group>";
+		};
+		19359440254D4C0100E26ADC /* packaging */ = {
+			isa = PBXGroup;
+			children = (
+				19359441254D4C0100E26ADC /* manifest.hpp */,
+				19359442254D4C0100E26ADC /* uri.hpp */,
+				19359443254D4C0100E26ADC /* relationship.hpp */,
+				19359444254D4C0100E26ADC /* ext_list.hpp */,
+			);
+			path = packaging;
+			sourceTree = "<group>";
+		};
+		19359445254D4C0100E26ADC /* drawing */ = {
+			isa = PBXGroup;
+			children = (
+				19359446254D4C0100E26ADC /* spreadsheet_drawing.hpp */,
+			);
+			path = drawing;
+			sourceTree = "<group>";
+		};
+		19359447254D4C0100E26ADC /* worksheet */ = {
+			isa = PBXGroup;
+			children = (
+				19359448254D4C0100E26ADC /* range_iterator.hpp */,
+				19359449254D4C0100E26ADC /* print_options.hpp */,
+				1935944A254D4C0100E26ADC /* sheet_view.hpp */,
+				1935944B254D4C0100E26ADC /* header_footer.hpp */,
+				1935944C254D4C0100E26ADC /* sheet_protection.hpp */,
+				1935944D254D4C0100E26ADC /* selection.hpp */,
+				1935944E254D4C0100E26ADC /* phonetic_pr.hpp */,
+				1935944F254D4C0100E26ADC /* major_order.hpp */,
+				19359450254D4C0100E26ADC /* pane.hpp */,
+				19359451254D4C0100E26ADC /* cell_vector.hpp */,
+				19359452254D4C0100E26ADC /* row_properties.hpp */,
+				19359453254D4C0100E26ADC /* range_reference.hpp */,
+				19359454254D4C0100E26ADC /* page_setup.hpp */,
+				19359455254D4C0100E26ADC /* column_properties.hpp */,
+				19359456254D4C0100E26ADC /* sheet_format_properties.hpp */,
+				19359457254D4C0100E26ADC /* page_margins.hpp */,
+				19359458254D4C0100E26ADC /* range.hpp */,
+				19359459254D4C0100E26ADC /* sheet_pr.hpp */,
+				1935945A254D4C0100E26ADC /* cell_iterator.hpp */,
+				1935945B254D4C0100E26ADC /* worksheet.hpp */,
+			);
+			path = worksheet;
+			sourceTree = "<group>";
+		};
+		1935945C254D4C0100E26ADC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1935945D254D4C0100E26ADC /* timedelta.hpp */,
+				1935945E254D4C0100E26ADC /* datetime.hpp */,
+				1935945F254D4C0100E26ADC /* time.hpp */,
+				19359460254D4C0100E26ADC /* variant.hpp */,
+				19359461254D4C0100E26ADC /* path.hpp */,
+				19359462254D4C0100E26ADC /* date.hpp */,
+				19359463254D4C0100E26ADC /* optional.hpp */,
+				19359464254D4C0100E26ADC /* numeric.hpp */,
+				19359465254D4C0100E26ADC /* calendar.hpp */,
+				19359466254D4C0100E26ADC /* exceptions.hpp */,
+				19359467254D4C0100E26ADC /* scoped_enum_hash.hpp */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		19359469254D4C0100E26ADC /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1935946A254D4C0100E26ADC /* rich_text_run.hpp */,
+				1935946B254D4C0100E26ADC /* cell_type.hpp */,
+				1935946C254D4C0100E26ADC /* phonetic_run.hpp */,
+				1935946D254D4C0100E26ADC /* hyperlink.hpp */,
+				1935946E254D4C0100E26ADC /* cell.hpp */,
+				1935946F254D4C0100E26ADC /* cell_reference.hpp */,
+				19359470254D4C0100E26ADC /* index_types.hpp */,
+				19359471254D4C0100E26ADC /* comment.hpp */,
+				19359472254D4C0100E26ADC /* rich_text.hpp */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		19359473254D4C0100E26ADC /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				19359474254D4C0100E26ADC /* alignment.hpp */,
+				19359475254D4C0100E26ADC /* border.hpp */,
+				19359476254D4C0100E26ADC /* number_format.hpp */,
+				19359477254D4C0100E26ADC /* fill.hpp */,
+				19359478254D4C0100E26ADC /* font.hpp */,
+				19359479254D4C0100E26ADC /* protection.hpp */,
+				1935947A254D4C0100E26ADC /* color.hpp */,
+				1935947B254D4C0100E26ADC /* format.hpp */,
+				1935947C254D4C0100E26ADC /* style.hpp */,
+				1935947D254D4C0100E26ADC /* conditional_format.hpp */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		1935947F254D4C0100E26ADC /* workbook */ = {
+			isa = PBXGroup;
+			children = (
+				19359480254D4C0100E26ADC /* workbook_view.hpp */,
+				19359481254D4C0100E26ADC /* workbook.hpp */,
+				19359482254D4C0100E26ADC /* external_book.hpp */,
+				19359483254D4C0100E26ADC /* theme.hpp */,
+				19359484254D4C0100E26ADC /* metadata_property.hpp */,
+				19359485254D4C0100E26ADC /* worksheet_iterator.hpp */,
+				19359486254D4C0100E26ADC /* named_range.hpp */,
+				19359487254D4C0100E26ADC /* calculation_properties.hpp */,
+				19359488254D4C0100E26ADC /* streaming_workbook_writer.hpp */,
+				19359489254D4C0100E26ADC /* streaming_workbook_reader.hpp */,
+				1935948A254D4C0100E26ADC /* document_security.hpp */,
+			);
+			path = workbook;
+			sourceTree = "<group>";
+		};
+		19485B972549931C005AF412 = {
+			isa = PBXGroup;
+			children = (
+				1935943C254D4C0100E26ADC /* XLNT */,
+				19485BA22549931C005AF412 /* TranslateExcel */,
+				19485BA12549931C005AF412 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19485BA12549931C005AF412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19485BA02549931C005AF412 /* TranslateExcel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19485BA22549931C005AF412 /* TranslateExcel */ = {
+			isa = PBXGroup;
+			children = (
+				19485BA32549931C005AF412 /* AppDelegate.swift */,
+				19485BA52549931C005AF412 /* ContentView.swift */,
+				1935943A254D34D000E26ADC /* UserData.swift */,
+				198F4381254BDA83007B8594 /* TranslateAPI.swift */,
+				19359438254D331800E26ADC /* DragView.swift */,
+				19924889254FFBB20052234F /* ProgressBar.swift */,
+				19359491254D4DA400E26ADC /* Excel.swift */,
+				19485BA725499320005AF412 /* Assets.xcassets */,
+				19485BAC25499320005AF412 /* Main.storyboard */,
+				19485BAF25499320005AF412 /* Info.plist */,
+				19485BB025499320005AF412 /* TranslateExcel.entitlements */,
+				19485BA925499320005AF412 /* Preview Content */,
+			);
+			path = TranslateExcel;
+			sourceTree = "<group>";
+		};
+		19485BA925499320005AF412 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				19485BAA25499320005AF412 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19485B9F2549931C005AF412 /* TranslateExcel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19485BB325499320005AF412 /* Build configuration list for PBXNativeTarget "TranslateExcel" */;
+			buildPhases = (
+				19485B9C2549931C005AF412 /* Sources */,
+				19485B9D2549931C005AF412 /* Frameworks */,
+				19485B9E2549931C005AF412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranslateExcel;
+			productName = TranslateExcel;
+			productReference = 19485BA02549931C005AF412 /* TranslateExcel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19485B982549931C005AF412 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = LyongY;
+				TargetAttributes = {
+					19485B9F2549931C005AF412 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 19485B9B2549931C005AF412 /* Build configuration list for PBXProject "TranslateExcel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19485B972549931C005AF412;
+			productRefGroup = 19485BA12549931C005AF412 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19485B9F2549931C005AF412 /* TranslateExcel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19485B9E2549931C005AF412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19485BAE25499320005AF412 /* Main.storyboard in Resources */,
+				19485BAB25499320005AF412 /* Preview Assets.xcassets in Resources */,
+				19485BA825499320005AF412 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19485B9C2549931C005AF412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198F4382254BDA83007B8594 /* TranslateAPI.swift in Sources */,
+				19485BA62549931C005AF412 /* ContentView.swift in Sources */,
+				19359439254D331800E26ADC /* DragView.swift in Sources */,
+				1935948F254D4C0200E26ADC /* XLNT.mm in Sources */,
+				1935943B254D34D000E26ADC /* UserData.swift in Sources */,
+				19359492254D4DA400E26ADC /* Excel.swift in Sources */,
+				1992488A254FFBB20052234F /* ProgressBar.swift in Sources */,
+				19485BA42549931C005AF412 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19485BAC25499320005AF412 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19485BAD25499320005AF412 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19485BB125499320005AF412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19485BB225499320005AF412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		19485BB425499320005AF412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TranslateExcel/TranslateExcel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TranslateExcel/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/XLNT\"";
+				INFOPLIST_FILE = TranslateExcel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLNT",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = LyongY.TranslateExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yly/Documents/Programs/SVNPrograms/IOS/Tools/TranslateExcel/XLNT/Language Tool-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		19485BB525499320005AF412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TranslateExcel/TranslateExcel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TranslateExcel/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/XLNT\"";
+				INFOPLIST_FILE = TranslateExcel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLNT",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = LyongY.TranslateExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yly/Documents/Programs/SVNPrograms/IOS/Tools/TranslateExcel/XLNT/Language Tool-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19485B9B2549931C005AF412 /* Build configuration list for PBXProject "TranslateExcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19485BB125499320005AF412 /* Debug */,
+				19485BB225499320005AF412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19485BB325499320005AF412 /* Build configuration list for PBXNativeTarget "TranslateExcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19485BB425499320005AF412 /* Debug */,
+				19485BB525499320005AF412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19485B982549931C005AF412 /* Project object */;
+}
